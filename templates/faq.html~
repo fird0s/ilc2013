@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block title %}FAQ {% endblock %}
+{% block content %}
+<br><br>
+<div id="faq">
+<ul>
+	{% for x in abc %}
+	<li class="hom">{{ x.question }}</li>
+	<li class="asw" style="width; 10px;">{{ x.answer }}</li><hr style="width: 72%;"/>
+ 	{% endfor %}
+</ul>
+</div>
+{% endblock %}

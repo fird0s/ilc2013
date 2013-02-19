@@ -1,0 +1,72 @@
+
+
+* {
+padding:0px;
+margin:0px;
+}
+
+
+#faq{
+
+}
+#faq ul li {
+	width: 70%;
+	display: block;
+	
+}
+
+.hom {
+	display: block;
+	padding-left: 10px;
+	padding-top:5px;
+	background: #eeeeee;
+	font-weight: bold;
+	padding: 8px;
+}
+	
+.asw{
+	padding-left: 20px;
+	background-color: white;
+	font-weight: normal;
+	margin-bottom: 10px;	
+}
+
+#thumbnail {
+	margin-left: 26px;
+}
+
+#lengkap {
+	float: left;
+	margin-left: 25px;
+	margin-top: 20px;
+	margin: auto;
+	padding: 10px;
+}	
+
+.judul {
+	font-size: 16px;
+	font-family : 'DejaVuSansCondensed';
+	position: absolute;
+	height: 40px;
+	width: 265px;
+	z-index: 1;
+	color: white;
+	margin-top: 230px;
+	background: black;
+	opacity: 0.8;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+.floatleft {
+	float: right;
+}
+	
+.aboutimg {
+	border: 1px solid gray;
+	margin: 30px;
+	height: 380px;
+	width: 250px;
+	border-radius: 4px;
+	}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<html lang="id">
+<head>
+	<title>{% block title %}ILC2013 {% endblock %}</title>
+	<link rel="stylesheet" href="media/css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="media/css/bootstrap-responsive.min.css" type="text/css">
+	<link rel="stylesheet" href="media/css/style.css" type="text/css">
+	<script type="text/javascript" src="media/js/bootstrap.min.js"></script>
+	<meta name="author" content="ilc 2013">
+	<meta name="description" content="ILC is indonesian linux conference">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+<body><br>
+<div class="container">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="{% url depan %}">ILC2013</a>
+        <ul class="nav">
+          <li> <!--class="active">--><a href="{% url depan %}">Halaman Depan</a></li>
+          <li><a href="{% url daftar %}">Daftar</a></li>
+          <li><a href="{% url jadwal %}">Jadwal Kegiatan</a></li>
+          <li><a href="{% url lokasi %}">Lokasi</a></li>
+          <li><a href="{% url penginapan %}">Penginapan</a></li>
+           <li><a href="{% url gallery %}">Gallery</a></li>
+          <li><a href="{% url sponsor %}">Sponsor</a></li>
+           <li><a href="{% url faq %}">Faq</a></li> 
+	 <li><a href="{% url hubungi %}">Hubungi</a></li>
+          
+        </ul>
+     </div>
+   </div>
+</div>  
+  		<div class="container">
+  		   <script type="text/javascript">
+  		     document.write("<a>"+window.location+"</a>");
+  		   </script>
+  		  {% block content %}
+  		  
+  		  <div class="page-header">
+  	              <h1>ILC <small>(INDONESIAN LINUX CONFERENCE)</small> 2013 @Aceh</h1>
+		  		
+		  </div>
+		  	
+		  	<div class="hero-unit">
+        		<p>Aenean rutrum lorem accumsan tortor venenatis tempus. Sed justo lorem, posuere non euismod nec, mollis a tellus. Aenean luctus hendrerit risus ac consequat. Nullam arcu felis, aliquet ut ullamcorper sed, fermentum vitae ante. Sed tincidunt, massa sit amet feugiat tincidunt, nisi eros venenatis ipsum, interdum pharetra orci leo a mi. Nunc eleifend egestas nibh ut porta. Vivamus bibendum dolor et sapien consectetur faucibus eu eget ante. Pellentesque habitant morbi cras amet.</p>
+                <p><a href="{% url daftar %}" target="_blank" class="btn btn-info">Ayo Mendaftar &raquo;</a></p>
+            </div>
+		   {% endblock %}
+			  <div id="footer">
+			   <hr>
+               <p class="muted credit"> &copy; ILC 2013 @Aceh | <a>ilc2013@acehlinux.org</a>  </p>
+			
+              </div>		
+  		    
+</body>
+</html>

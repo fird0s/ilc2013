@@ -1,0 +1,11 @@
+{% extends "index.html" %}
+{% block title %}Hubungi {% endblock %}
+{% block content %}
+
+<div class="hero-unit" style="margin-top: 10px;">
+        	<ul>
+        		<li>HP. xxxxxxxxxxxxx</li>
+        		<li>Mail. xxxxxxxxxxxxx</li>
+        	</ul>	
+            </div>
+{% endblock %}
