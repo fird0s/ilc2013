@@ -1,14 +1,19 @@
 {% extends "index.html" %}
 {% block title %}daftar {% endblock %}
 {% block content %}
-<br><br>
-<div id="faq">
-<ul>
-	{% for informasi in INformasi %}
-	<li class="hom"># {{ informasi.informasi }}</li>
-      <hr style="width:820px;">
- 	<br />	{% endfor %}
-</ul>
-</div>
-
+   <br/>
+   <br/>
+  </p>
+  <div id="faq">
+   <ul>
+    {% for informasi in INformasi %}
+    <li class="hom">
+     # {{ informasi.informasi }}
+    </li>
+    <hr style="width:820px;"/>
+    <br/>
+    {% endfor %}
+   </ul>
+  </div>
 {% endblock %}
+

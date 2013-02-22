@@ -8,7 +8,7 @@ class faq(models.Model):
                 verbose_name_plural = "Faq"
 	
 	def __unicode__(self):
-		return self.question
+		return self.answer
 	
 	
 jadwal_STATUS = (
@@ -59,3 +59,11 @@ class penginapan(models.Model):
 		verbose_name_plural ="Penginapan"			
 				
 					
+class informasi(models.Model):
+	informasi = models.TextField()
+	
+	def __unicode__(self):
+		return self.informasi
+		
+	class Meta:
+		verbose_name_plural = "Informasi"						

@@ -1,11 +1,12 @@
 # Django settings for ilc project.
-
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     ('fird0s', 'firdauskoder@gmail.com'),
 )
+
+SEND_BROKEN_LINK_EMAILS = True
 
 MANAGERS = ADMINS
 

@@ -21,7 +21,9 @@ urlpatterns = patterns('',
     # url(r'^ilc/', include('ilc.foo.urls')), #for decloping URL
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
     url(r'^tamong123/', include(admin.site.urls)),
+
 )
+handler404 = "portal.views.Status"
 
 if settings.DEBUG:
     urlpatterns += patterns('',

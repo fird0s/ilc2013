@@ -26,3 +26,11 @@ application = get_wsgi_application()
 # Apply WSGI middleware here.
 # from helloworld.wsgi import HelloWorldApplication
 # application = HelloWorldApplication(application)
+
+#tambahan (fird0s)
+import site 
+site.addsitedir("/usr/local/lib/python2.7/site-packages")
+
+import django.core.handlers.wsgi
+
+application = django.core.handlers.wsgi.WSGIHandler()

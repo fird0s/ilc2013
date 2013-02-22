@@ -20,8 +20,10 @@ urlpatterns = patterns('',
     url(r'^informasi/$', 'portal.views.Informasi', name="informasi"),  
     # url(r'^ilc/', include('ilc.foo.urls')), #for decloping URL
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
-    url(r'^tamong/', include(admin.site.urls)),
+    url(r'^tamong123/', include(admin.site.urls)),
+
 )
+handler404 = "portal.views.404Status"
 
 if settings.DEBUG:
     urlpatterns += patterns('',

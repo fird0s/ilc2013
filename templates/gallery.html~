@@ -1,89 +1,10 @@
 {% extends "index.html" %}
 {% block title %}Gallery {% endblock %}
 {% block content %}
-<div id="thumbnail">
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/img/github-logo-transparent.jpg" />
-			
-		</div>
+<div class="container"><br>
 	
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/bgadek.png" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/bgadek.png" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/bgadek.png" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/bgadek.png" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/Screenshot_from_2012-11-16_070415.png" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		<div id="lengkap">
-			<p class="judul">Jak u laot</p>
-			<img class="nailthumb-container" src="media/images/soon.jpg" />
-			
-		</div>
-		
-	</div>
+	<h3><a href="#">Gambar</a></h3>
+	<h2><a href="#">Video</a></h1>
+
+</div>
 {% endblock %}

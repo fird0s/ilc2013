@@ -36,4 +36,9 @@ def Hubungi(request):
 	
 def Informasi(request):
 	INformasi = informasi.objects.all()
-	return render_to_response ('informasi.html', locals())															
+	return render_to_response ('informasi.html', locals())		
+	
+
+def Status(request):
+	return render_to_response ('404.html', locals())		
+															
