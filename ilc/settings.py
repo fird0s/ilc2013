@@ -21,6 +21,18 @@ DATABASES = {
     }
 }
 
+CACHES = { 
+    'default' :{		    		
+	'BACKEND' : 'django.core.cache.backends.db.DatabaseCache',
+	'TIMEOUT' : 60,
+	'LOCATION' : 'portal_cache',
+		'OPTIONS' : {
+			'MAX_ENTRIES': 100
+		}
+}	
+}
+
+
 
 TIME_ZONE = 'America/Chicago'
 
@@ -91,8 +103,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    # Uncomment the next line for simple clickjacking protection:
-    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
+    #cache table add by fird0s
+    'django.middleware.cache.UpdateCacheMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.cache.FetchFromCacheMiddleware',
+    
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'ilc.urls'
