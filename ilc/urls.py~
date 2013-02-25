@@ -23,7 +23,7 @@ urlpatterns = patterns('',
     url(r'^tamong123/', include(admin.site.urls)),
 
 )
-handler404 = "portal.views.404Status"
+handler404 = "portal.views.Status"
 
 if settings.DEBUG:
     urlpatterns += patterns('',

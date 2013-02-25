@@ -16,7 +16,7 @@ DATABASES = {
         'NAME': 'ilc2013',                      # Or path to database file if using sqlite3.
         'USER': 'ilc2013',                      # Not used with sqlite3.
         'PASSWORD': 'ilc2013',                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'HOST': 'localhost',                      # sSet to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
 }
@@ -24,10 +24,10 @@ DATABASES = {
 CACHES = { 
     'default' :{		    		
 	'BACKEND' : 'django.core.cache.backends.db.DatabaseCache',
-	'TIMEOUT' : 60,
+	'TIMEOUT' : 300,
 	'LOCATION' : 'portal_cache',
 		'OPTIONS' : {
-			'MAX_ENTRIES': 100
+			'MAX_ENTRIES': 1
 		}
 }	
 }
