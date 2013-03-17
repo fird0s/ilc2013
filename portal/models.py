@@ -34,7 +34,7 @@ class sponsor_and_partner(models.Model):
 	by = models.CharField(max_length=30)
 	website = models.URLField(blank=True,help_text="kosong jika tidak ada")
 	about_sponsor = models.TextField()
-#        gambar = models.ImageField(upload_to='upload')
+        gambar = models.ImageField(upload_to='upload')
 	def __unicode__(self):
 		return self.by
 	

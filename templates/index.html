@@ -96,17 +96,11 @@ nasional.<br />
    <div id="sponsor">
    		<h5 style="margin-left: 40px;"> Sponsor/Partner</h5>
    		<ul>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			{% for sponsor_img in Spons_gambar %}
+   			<li><a href="/media/{{ sponsor_img.gambar }}"><img src="/media/{{ sponsor_img.gambar }}" /><a/></li>
+   			{% endfor %}	
    			
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
-   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			
    		</ul>	
    
    </div>

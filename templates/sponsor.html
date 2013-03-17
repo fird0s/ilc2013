@@ -24,13 +24,17 @@
      {% for sponsor in SPonsor %}
      <tr>
       <td>
+      	
+       <img style="width: 30px; height: 30px;" src="/media/{{ sponsor.gambar }}" />
+      
       </td>
       <td>
        {{ sponsor.by }}
       </td>
       <td>
-       {{ sponsor.webiste }}
+       {{ sponsor.website }}
       </td>
+      
      </tr>
      {% endfor %}
     </tbody>

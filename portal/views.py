@@ -4,9 +4,11 @@ from django.shortcuts import render_to_response
 from django.http import Http404
 
 def depan(request):
+	Spons_gambar = sponsor_and_partner.objects.all()
 	return render_to_response ('index.html', locals())
 	
 def daftar(request):
+	
 	return render_to_response ('daftar.html', locals())	
 
 def Jadwal(request):
@@ -31,6 +33,7 @@ def FaQ(request):
 	return render_to_response ('faq.html', locals())		
 
 def Sponsor(request):
+	
 	SPonsor = sponsor_and_partner.objects.all()
 	return render_to_response ('sponsor.html', locals())													
 
