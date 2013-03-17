@@ -8,11 +8,11 @@ class faqAdmin(admin.ModelAdmin):
 	list_dispay = ('question'), ('answer')
 	
 class penginapanAdmin(admin.ModelAdmin):
-	list_display = ("penginapan"),
+	list_display = ("penginapan"), ("harga"), ("Alamat"), ("website"), ("kelas"),
 		
 
 class jadwalAdmin(admin.ModelAdmin):
-	list_display = ("kegiatan"),
+	list_display = ("kegiatan"), ("tempat"), ("pembicara"), ("status"),("tanggal"),
 
 class informasiAdmin(admin.ModelAdmin):
 	list_display = ("informasi"),	

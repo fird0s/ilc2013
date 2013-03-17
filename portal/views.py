@@ -21,6 +21,9 @@ def gallery(request):
 	
 def Penginapan(request):
 	PEnginapan = penginapan.objects.all()
+	Penginapan_kelasbawah = penginapan.objects.filter(kelas="bh")
+	Penginapan_kelasatas = penginapan.objects.filter(kelas="at")
+	Penginapan_kelastengah = penginapan.objects.filter(kelas="tg")
 	return render_to_response ('penginapan.html', locals())			
 	
 def FaQ(request):

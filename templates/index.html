@@ -14,72 +14,33 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
  </head>
  <body>
+  
+  
   <br/>
   <div class="container">
    <div class="navbar">
-    <div class="navbar-inner">
-     <ul class="nav">
-      <li>
-       <img src="media/img/ilclogo.jpg" style="padding-top: 2px; heigth:100px; width: 100px;"/>
-      </li>
-      <li>
-       <a href="{% url depan %}">
-        Halaman Depan
-       </a>
-      </li>
-      <li>
-       <a href="{% url daftar %}">
-        Daftar
-       </a>
-      </li>
-      <li>
-       <a href="{% url lokasi %}">
-        Lokasi
-       </a>
-      </li>
-      <li>
-       <a href="{% url jadwal %}">
-        Jadwal Kegiatan
-       </a>
-      </li>
-      <li>
-       <a href="{% url penginapan %}">
-        Penginapan
-       </a>
-      </li>
-      <li>
-       <a href="{% url gallery %}">
-        Gallery
-       </a>
-      </li>
-      <li>
-       <a href="{% url sponsor %}">
-        Sponsor
-       </a>
-      </li>
-      <li>
-       <a href="{% url informasi %}">
-        Informasi
-       </a>
-      </li>
-      <li>
-       <a href="{% url faq %}">
-        Faq
-       </a>
-      </li>
-      <li>
-       <a href="{% url hubungi %}">
-        Hubungi
-       </a>
-      </li>
-     </ul>
-    </div>
+  	<div class="navbar-inner">
+    	<a class="brand" href=" {% url depan %}">ILC2013</a>
+   			 <ul class="nav">
+    			  <li><a href="{% url depan %}">Depan</a></li>
+    			   <li><a href="{% url informasi %}">Berita</a></li>
+    			  <li><a href="{% url daftar %}">Pendaftaran</a></li>
+    			  <li><a href="{% url penginapan %}">Penginapan</a></li>
+    			  <li><a href="{% url jadwal %}">Jadwal</a></li>
+    			  <li><a href="{% url sponsor %}">Sponsor</a></li>
+    			  <li><a href="{% url faq %}">FAQ</a></li>
+    			
+    			  <li><a href="{% url hubungi %}">Hubungi</a></li>
+   			 </ul>
+
+
+	</div>
    </div>
   </div>
   <div class="container">
-   <script type="text/javascript">
-    document.write("<a>"+window.location+"</a>");
-   </script>
+<!--   <script type="text/javascript">-->
+<!--    document.write("<a>"+window.location+"</a>");-->
+<!--   </script>-->
    {% block content %}
    <div class="page-header">
     <h1>
@@ -91,20 +52,70 @@
     </h1>
    </div>
    <div class="hero-unit">
-    <p>
-     Indonesia Linux Conference (ILC) merupakan rangkaian kegiatan tahunan berskala nasional yang terdiri dari konferensi, seminar, workshop, training, lomba dan pameran yang berkaitan dengan sistem operasi Linux. Konferensi ini dihadiri oleh pengguna, pengembang dan aktivis Linux, pengusaha, pemerintah serta masyarakat umum.
+    <p style="font-size: 15px;">
+     Indonesia Linux Conference merupakan kegiatan tahunan yang dilaksanakan secara
+nasional bahkan sekelas Internasional, sebagai ajang bertemunya insan
+penggiat, Pengguna, Pemerhati serta vendor Open Source khususnya operasi
+GNU/Linux,
+ Indonesia Linux Conference yang pada awal mulanya sebagai ajang diskusi
+para penggiat dan aktivis GNU/Linux seluruh Indonesia, sekarang tidak hanya
+sekedar diskusi saja, Melainkan sudah menjadi rangkaian kegiatan yang diawali
+dengan seminar, Workshop, Training, Pameran-pameran serta di ikuti  dengan sebuah rekomendasi akhir
+yang terbaik untuk dapat di manfaatkan oleh pemerintah, sekolah, perusahaan
+dan masyarakat umum dan pada akhirnya acara di tutup dengan diskusi
+nasional. <br />
+Diskusi diikuti oleh para penggiat dan aktivis GNU/Linux dari seluruh
+Indonesia yang di wakili oleh organisasi-organisasi penggiat GNU/Linux seperti
+Kelompok Pengguna Linux Indonesia (KPLI), Linux User Grup (LUG), Kelompok
+Studi Linux (KSL). Kelompok-kelompok ini mewakili kalangan umum, hobi,
+mahasiswa dan akademis. 
+Indonesia Linux Conference sendiri dilaksanakan dengan harapan dapat
+mendorong pemanfaatan GNU/Linux di semua bidang baik di lingkungan rumah
+tangga, bisnis, pendidikan serta pemerintahaan, 
+selain menjadi media sosialisasi dan advokasi GNU/Linux, Indonesia
+Linux Conference juga menjadi forum untuk membahas masalah-masalah
+dalam implementasi GNU/Linux, pemanfaatan, pengembangan serta pertukaran dan perkonsian
+solusi bersama yang di harapkan dapat diterapkan secara regional maupun
+nasional.<br />
 
-ILC dilaksanakan untuk mendorong pemanfaatan Linux di masyarakat baik di rumah, lembaga pendidikan, lembaga pemerintah ataupun dunia bisnis. Selain sebagai media mengenalkan Linux kepada masyarakat, ILC juga menjadi forum untuk membahas permasalahan-permasalahan implementasi Linux dan menemukan solusi-solusi praktis yang dapat diterapkan secara nasional. Sehingga Linux sebagai alat bantu untuk meningkatkan kesejahteraan di Indonesia sebagai tujuan akhir setelah pelaksanaan ILC diharapkan dapat terwujud.
-    </p>
+         </p>
+    <br />
     <p>
      <a class="btn btn-info" href="{% url daftar %}" target="_blank">
       Ayo Mendaftar »
      </a>
     </p>
+    <p>
+     <a class="btn btn-info" href="{% url sponsor %}" target="_blank">
+      Menjadi Sponsor/Partner  »     </a>
+    </p>
+   	<p><i>Jika ada kejanggalan <a href="#">hubungi kami<a/></i>.</p>
    </div>
-   {% endblock %}
+  	
+   
+   <div id="sponsor">
+   		<h5 style="margin-left: 40px;"> Sponsor/Partner</h5>
+   		<ul>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   			<li><a href="#"><img src="media/img/ilclogo.jpg" /><a/></li>
+   		</ul>	
+   
+   </div>
+   
+   
+    {% endblock %}
    <div id="footer">
-    <hr/>
+    
+   
     <p class="muted credit">
      © ILC 2013 @Aceh |
      <a>
@@ -122,6 +133,8 @@ ILC dilaksanakan untuk mendorong pemanfaatan Linux di masyarakat baik di rumah, 
       Twitter |
      </a>
     </p>
+<!--   Powered  : <a href="https://www.djangoproject.com">Django</a> | <a href="#">Python-Memcached</a> -->
+   	
    </div>
   </div>
  </body>

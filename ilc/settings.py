@@ -21,16 +21,16 @@ DATABASES = {
     }
 }
 
-CACHES = { 
-    'default' :{		    		
-	'BACKEND' : 'django.core.cache.backends.db.DatabaseCache',
-	'TIMEOUT' : 300,
-	'LOCATION' : 'portal_cache',
-		'OPTIONS' : {
-			'MAX_ENTRIES': 1
-		}
-}	
-}
+#CACHES = { 
+#    'default' :{		    		
+#	'BACKEND' : 'django.core.cache.backends.db.DatabaseCache',
+#	'TIMEOUT' : 300,
+#	'LOCATION' : 'portal_cache',
+#		'OPTIONS' : {
+#			'MAX_ENTRIES': 1
+#		}
+#}	
+#}
 
 
 
@@ -55,7 +55,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '/home/fird0s/ilc/media'
+MEDIA_ROOT = '/home/fird0s/ilc2013/ilc2013/media'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -104,12 +104,12 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     
-    #cache table add by fird0s
-    'django.middleware.cache.UpdateCacheMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.cache.FetchFromCacheMiddleware',
-    
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+#    #cache table add by fird0s
+#    'django.middleware.cache.UpdateCacheMiddleware',
+#    'django.middleware.common.CommonMiddleware',
+#    'django.middleware.cache.FetchFromCacheMiddleware',
+#    
+#    'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
 ROOT_URLCONF = 'ilc.urls'
@@ -118,8 +118,8 @@ ROOT_URLCONF = 'ilc.urls'
 WSGI_APPLICATION = 'ilc.wsgi.application'
 
 TEMPLATE_DIRS = (
-  "/home/fird0s/ilc/templates",
-)
+  "/home/fird0s/ilc2013/ilc2013/templates",
+	)
 
 INSTALLED_APPS = (
     'django.contrib.auth',

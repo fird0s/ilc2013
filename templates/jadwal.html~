@@ -3,14 +3,13 @@
 {% block content %}
   </p>
   <div class="bs-docs-example">
+   <h5><a href="#"> Ingin Menjadi Pemateri ? </a></h5>
    <br/>
    <br/>
+   
    <table class="table table-striped table-hover" style="">
     <thead>
      <tr>
-      <th>
-       #
-      </th>
       <th>
        Kegiatan
       </th>

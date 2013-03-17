@@ -1,10 +1,9 @@
   {% extends "index.html" %}
-{% block title %}Hubungi {% endblock %}
+{% block title %}Penginapan {% endblock %}
 {% block content %}
   </p>
   <div class="bs-docs-example">
-   <br/>
-   <br/>
+  <h4><a>Kelas Atas </a></h4>
    <table class="table table-striped table-hover" style="">
     <tr>
      <th>
@@ -20,7 +19,7 @@
       Website
      </th>
     </tr>
-    {% for penginapan in PEnginapan %}
+    {% for penginapan in Penginapan_kelasatas %}
     <tr>
      <td>
       {{ penginapan.penginapan }}
@@ -37,6 +36,80 @@
     </tr>
     {% endfor %}
    </table>
+  
+  	
+  
+   <br/>
+   <br/>
+  	<hr>
+   <h4><a>Kelas Menengah </a></h4>
+   <table class="table table-striped table-hover" style="">
+    <tr>
+     <th>
+      Penginapan
+     </th>
+     <th>
+      Harga
+     </th>
+     <th>
+      Alamat
+     </th>
+     <th>
+      Website
+     </th>
+    </tr>
+    {% for penginapan in Penginapan_kelastengah %}
+    <tr>
+     <td>
+      {{ penginapan.penginapan }}
+     </td>
+     <td>
+      {{ penginapan.harga }}
+     </td>
+     <td>
+      {{ penginapan.Alamat }}
+     </td>
+     <td>
+      {{ penginapan.website }}
+     </td>
+    </tr>
+    {% endfor %}
+   </table>
+   <br><br><hr>
+  <h4><a>Kelas Bawah </a></h4>
+  	 <table class="table table-striped table-hover" style="">
+    <tr>
+     <th>
+      Penginapan
+     </th>
+     <th>
+      Harga
+     </th>
+     <th>
+      Alamat
+     </th>
+     <th>
+      Website
+     </th>
+    </tr>
+    {% for penginapan in Penginapan_kelasbawah %}
+    <tr>
+     <td>
+      {{ penginapan.penginapan }}
+     </td>
+     <td>
+      {{ penginapan.harga }}
+     </td>
+     <td>
+      {{ penginapan.Alamat }}
+     </td>
+     <td>
+      {{ penginapan.website }}
+     </td>
+    </tr>
+    {% endfor %}
+   </table>
+  	<br><br><hr>
   </div>
   {% endblock %}
 

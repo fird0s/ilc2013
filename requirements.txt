@@ -1,0 +1,4 @@
+django==1.4.3
+mysql-python
+python-memcached
+django-admin-bootstrap
