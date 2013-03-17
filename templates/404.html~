@@ -1,7 +1,0 @@
-{% extends "index.html" %}
-{% block title %}FAQ {% endblock %}
-{% block content %}
-<h1 class="container">OOPs !</h1>
-<h2 class="containner">Maaf Link yang anda request salah, kembali ke <a href="{% url depan %}">Halaman Depan</a></h2>
-
-{% endblock %}
