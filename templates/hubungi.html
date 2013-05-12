@@ -1,19 +1,31 @@
 {% extends "index.html" %}
 {% block title %}Hubungi {% endblock %}
+{% block menu %}
+ 			<ul class="nav">
+    			  <li><a  href="{% url depan %}">Depan</a></li>
+    			  <li><a href="{% url informasi %}">Berita</a></li>
+    			  <li><a href="{% url daftar %}">Pendaftaran</a></li>
+    			  <li><a href="{% url penginapan %}">Penginapan</a></li>
+    			  <li><a href="{% url jadwal %}">Jadwal</a></li>
+    			  <li><a href="{% url sponsor %}">Sponsor</a></li>
+    			  <li><a href="{% url faq %}">FAQ</a></li>
+    			  <li class="active"><a href="{% url hubungi %}">Hubungi</a></li>
+  			
+   			 </ul>
+{% endblock %}
 {% block content %}
-  </p>
-  <div class="hero-unit" style="margin-top: 10px;">
-   <ul>
-    <li>
-     HP. xxxxxxxxxxxxx
-    </li>
-    <li>
-     Mail. ilc2013@acehlinux.org
-    </li>
-    <li>
-     Mail. xxxxxxxxxxxxx
-    </li>
-   </ul>
-  </div>
+   
+       <div class="span7">
+   	      <div class="hero-unit hubungi" style="margin-top: 10px;">
+     		   <h4>Hubungi : </h4>
+     		     	<ul>	
+     				   <li> * 0852705468xx</li>
+     				   <li> * ilc2013@acehlinux.org</li>
+     				   <li> * <a href="#">Facebook</a></li>
+     			     </ul>	
+     	   </div>
+  	   </div>
+  	  		   	  
+  	  
 {% endblock %}
 

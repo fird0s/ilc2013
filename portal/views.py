@@ -2,6 +2,7 @@
 from models import *
 from django.shortcuts import render_to_response
 from django.http import Http404
+from datetime import datetime
 
 def depan(request):
 	Spons_gambar = sponsor_and_partner.objects.all()
@@ -38,6 +39,8 @@ def Sponsor(request):
 	return render_to_response ('sponsor.html', locals())													
 
 def Hubungi(request):
+	if request.method == "POST":
+		pass
 	return render_to_response ('hubungi.html', locals())														
 	
 def Informasi(request):
@@ -46,5 +49,8 @@ def Informasi(request):
 	
 
 def Status(request):
-	return render_to_response ('404.html', locals())		
+    tail = log(ip=request.META.get('REMOTE_ADDR') + "--"+request.get_host() + "--" +
+    	   request.META.get('HTTP_USER_AGENT'), waktu=datetime.now())
+    tail.save()
+    return render_to_response ('404.html', locals())		
 															

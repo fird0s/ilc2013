@@ -1,5 +1,18 @@
   {% extends "index.html" %}
 {% block title %}Penginapan {% endblock %}
+{% block menu %}
+ 			<ul class="nav">
+    			  <li><a  href="{% url depan %}">Depan</a></li>
+    			  <li><a href="{% url informasi %}">Berita</a></li>
+    			  <li><a href="{% url daftar %}">Pendaftaran</a></li>
+    			  <li class="active"><a href="{% url penginapan %}">Penginapan</a></li>
+    			  <li><a href="{% url jadwal %}">Jadwal</a></li>
+    			  <li><a href="{% url sponsor %}">Sponsor</a></li>
+    			  <li><a href="{% url faq %}">FAQ</a></li>
+    			  <li><a href="{% url hubungi %}">Hubungi</a></li>
+  			
+   			 </ul>
+{% endblock %}
 {% block content %}
   </p>
   <div class="bs-docs-example">

@@ -6,6 +6,10 @@ margin:0px;
 }
 
 
+body {
+	
+}
+
 #faq{
 
 }
@@ -33,15 +37,15 @@ margin:0px;
 
 
 #sponsor {
-	margin-left: 200px;	
-	width: 700px;
+	margin: auto;
 }
 
 #sponsor ul li{
 	display: block;
 	float: left;
-	padding: 6px;
-	border-right: 1px dotted gray;
+	padding: 5px;
+	
+	
 }
 
 
@@ -50,15 +54,34 @@ margin:0px;
 
 }
 #sponsor img{
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	
 }
+
+.hubungi ul li {display: block;}
+
 
 
 #footer {
 	clear: both;
 	margin-top: 120px;
+}
+
+
+.feedback {
+	position: fixed;
+	top: 270px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #eeeeee;
+	background: #eeeeee;
+	left: 1px;
+}
+
+.feedback:hover{
+	background: white;
+	text-decoration: none;
 }
 
 

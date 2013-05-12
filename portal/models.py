@@ -75,4 +75,21 @@ class informasi(models.Model):
 	class Meta:
 		verbose_name_plural = "Informasi"	
 		
+class log(models.Model):
+	ip = models.CharField(max_length=200)
+	waktu = models.TimeField()
+	
+
+	def __unicode__(self):
+		return self.ip
+		
+		
+class hubungi(models.Model):
+	nama = models.CharField(max_length=300)
+	email = models.EmailField()
+	pesan = models.TextField()
+	
+	def __unicode__(self):
+		return self.nama		
+
 						

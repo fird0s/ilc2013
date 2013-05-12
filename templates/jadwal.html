@@ -1,12 +1,21 @@
 {% extends "index.html" %}
 {% block title %}Jadwal {% endblock %}
+{% block menu %}
+ 			<ul class="nav">
+    			  <li><a  href="{% url depan %}">Depan</a></li>
+    			  <li><a href="{% url informasi %}">Berita</a></li>
+    			  <li><a href="{% url daftar %}">Pendaftaran</a></li>
+    			  <li><a href="{% url penginapan %}">Penginapan</a></li>
+    			  <li class="active"><a href="{% url jadwal %}">Jadwal</a></li>
+    			  <li><a href="{% url sponsor %}">Sponsor</a></li>
+    			  <li><a href="{% url faq %}">FAQ</a></li>
+    			  <li><a href="{% url hubungi %}">Hubungi</a></li>
+  			
+   			 </ul>
+{% endblock %}
 {% block content %}
   </p>
-  <div class="bs-docs-example">
-   <h5><a href="#"> Ingin Menjadi Pemateri ? </a></h5>
-   <br/>
-   <br/>
-   
+  <div class="bs-docs-example"> 
    <table class="table table-striped table-hover" style="">
     <thead>
      <tr>
