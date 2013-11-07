@@ -1,4 +1,7 @@
 # Django settings for ilc project.
+import os
+import sys
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -55,7 +58,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = '/home/fird0s/ilc2013/ilc2013/media'
+MEDIA_ROOT = (os.path.join(os.path.dirname(__file__), '../media'))
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -117,9 +120,7 @@ ROOT_URLCONF = 'ilc.urls'
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'ilc.wsgi.application'
 
-TEMPLATE_DIRS = (
-  "/home/fird0s/ilc2013/ilc2013/templates",
-	)
+TEMPLATE_DIRS =  (os.path.join(os.path.dirname(__file__), '../templates'))
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -129,7 +130,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portal',
-   'bootstrap_admin',
+    'django_admin_bootstrapped',
     'django.contrib.admin',
    
     # Uncomment the next line to enable admin documentation:
